@@ -1,0 +1,299 @@
+
+window{
+background: #f5f5f6;
+border-radius:10px;
+position: fixed;
+box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+#taskbarMenu{
+width: 25%;
+height: 30%;
+bottom: 5.5%;
+}
+
+dropdown{
+z-index:999;
+background: #f5f5f6;
+box-shadow: 0 0 5px rgba(0,0,0,0.5);
+position: fixed;
+border-radius: 10px 10px 0 0;
+}
+
+#about{
+height:270px;
+width:350px;
+}
+
+#sandbox{
+text-align:center;
+height:600px;
+width:350px;
+}
+#sandbox div *{
+    margin:2px;
+}
+
+#about{
+text-align:center;
+}
+
+window:hover{
+z-index:999;
+}
+
+statusbar:active{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+window statusbar{
+display: block;/* Helpful */
+background: #1565c0;
+border-radius:10px 10px 0 0;
+width:100%;
+height:20px;
+left:50;
+}
+
+window *{
+}
+
+.title{
+color: #fff;
+margin: 6px 0 0 10px;
+font-size: 15px;
+font-family: 'Raleway', sans-serif;
+}
+
+file input{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    font-family: 'Raleway', sans-serif;
+    margin:0;
+    border:0;
+    outline: none;
+    left: 50px;
+    display: block;
+    background: transparent;
+    text-align:center;
+    width:50%;
+    height:40%
+}
+file input:hover{
+    background: #1565c0;
+    border-radius:5px;
+}
+
+file:hover input{
+    color: #fff;
+}
+
+file{
+position: fixed;
+z-index:-1;
+}
+
+file img{
+    height:64px;
+    width:64px;
+}
+
+
+menu{
+padding:2px;
+margin:2px;
+height: 80% !important;
+width: 2.2% !important;
+background: #1565c0;
+border-radius:20px;
+box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+#lolpOSname{
+margin:27%;
+color: #fff;
+}
+
+menu:hover{
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+button{
+font-family: 'Raleway', sans-serif;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+border: 0;
+/*font-weight: 50px;*/
+color: #fff!important;
+background: #1565c0;
+border-radius:20px;
+box-shadow: 0 0 2px rgba(0,0,0,0.5);
+outline: 0;
+outline-offset: 0;
+}
+
+button:hover{
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+outline: none;
+}
+
+input{
+box-shadow: 0 0 2px rgba(0,0,0,0.5);
+border:0;
+border-radius:20px;
+}
+
+#installOS{
+text-align: center;
+}
+
+statusbar close{
+background: #c62828;
+}
+
+statusbar hide{
+background: #ffad42;
+}
+
+statusbar fullscreen{
+background: #6abf69;
+}
+
+statusbar fullscreen:hover, statusbar close:hover,statusbar hide:hover{
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+statusbar fullscreen, statusbar hide,statusbar close{
+height: 10px;
+width: 10px;
+border-radius:15px;
+display: inline;
+float: right;
+margin: 5px;
+box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+body{
+background: url(https://cdn-images-1.medium.com/max/1600/1*Jie55HRpeCmZpmldgrL2eQ.png) no-repeat;
+background-size: 100%;
+}
+
+/*
+html, body{
+height:98%;
+width:98%;
+}*/
+
+#time{
+float:right;
+margin: 0 25px 0 0;
+font-size:25px;
+}
+
+bar{
+box-shadow: 0 0 2px rgba(0,0,0,0.5);
+background: #f5f5f6;
+height: 5.5%;
+width: 100%;
+margin: 0;
+z-index:99999999;
+position: fixed;
+bottom: 0;
+padding: 0;
+right:0;
+}
+bar  *{
+display: inline-block;
+}
+bar img{
+width:16px;
+height:16px;
+}
+.textsimple{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.fullscreenType{
+transition: width 0.3s, height 0.3s,top 0.3s,left 0.3s, transform 0.3s;
+height:100% !important;
+width:100% !important;
+top: 0 !important;
+left: 0 !important;
+z-index:1000;    
+}
+
+.closeType{
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.simpleType{
+    transition: width 0.3s, height 0.3s,top 0.3s,left 0.3s, transform 0.3s;
+}
+
+.hideType{
+    opacity: 0;
+    top:80% !important;
+    transition: opacity 0.3s, top 0.3s;
+}
+
+.showType{
+    opacity: 1;
+    transition: opacity 0.3s, top 0.3s;
+}
+
+open{
+font-weight:bold;
+text-align: center;
+color: #fff;
+background: #1565c0;
+height: 70%;
+padding: 0;
+width: 8%;
+margin: 0px 5px 0px 5px;
+border-radius:10px;
+box-shadow: 0 0 4px rgba(0,0,0,0.5);
+}
+open:hover{
+box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+time{
+color:#000;
+}
+
+.forMouse{
+position: absolute;
+width: 100px;
+height: 200px;
+border-radius: 15px;
+padding: 0px;
+display: none;
+}
+
+.forMouse li{
+text-align:center;
+cursor: pointer;
+margin: 5px 0;
+list-style-type: none;
+user-select: none;
+width: 100%;
+}
+.forMouse li:hover{
+transition: all .2s linear;
+box-shadow: 0 0 5px rgba(0,0,0,0.5);
+background: #1565c0;
+color: #fff;
+border-radius:10px;
+}
+
+.showTypeDrop{
+    display: inline;
+}
+.hideTypeDrop{
+    display: none;
+}

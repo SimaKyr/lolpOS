@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<meta name="description" content="This is new OS, what run on you webbrowser"> 
+<meta name="Keywords" content="OS, browser, HTML5, CSS3, SimaKyr"> 
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<title>LolpOS</title>
+</head>
+
+<body>
+<!-- Window 1 -->
+<window id="about" draggable="true">
+<statusbar><b class="title textsimple">About LolpOS</b>
+<close></close>
+<fullscreen></fullscreen>
+<hide></hide>
+</statusbar>
+<!-- Status bar end, next - contains html window -->
+<p class="textsimple" id="installOS">LolpOS this is OS, but it run on browser<br>
+It OS don't use canvas, but it <b>cute</b>, she using Material Design 2.0</p>
+<p class="textsimple">But it is OS don't ready for full using, you can <b>create</b> program here with CSS,JS and HTML<br>
+Very soon users this OS, can create with <b>Scratch like</b> blocks <b>programs.</b><p>
+</p>
+<b class="textsimple">By SimaKyr</b>
+<br>
+<b class="textsimple">You are using Beta LolpOS</b>
+<br>
+<button onclick="closeWin('about');">Hide</button>
+</window>
+
+<!-- Window 2 -->
+<window id="sandbox" draggable="false">
+<statusbar>
+<b class="title textsimple">Sandbox LolpOS</b>
+<fullscreen></fullscreen>
+<hide></hide>
+</statusbar>
+<!-- Status bar end, next - contains html window -->
+<div>
+<p class="textsimple">This is <b>sandbox</b> version<br>Down buttons for control</p>
+<br>
+<br>
+<p>Name Folder:</p>
+<input id="sandboxNameFolder"></input>
+<br>
+<p>ID:</p>
+<input id="sandboxIDFolder"></input>
+<br>
+<button id="newFolder">New folder</button>
+<br>
+<p>Title:</p>
+<input></input>
+<br>
+<p>ID:</p>
+<input></input>
+<br>
+<p>Name in taskbar:</p>
+<input></input>
+<br>
+<p>Do you want acces from taskbar?(true or false):</p>
+<input></input>
+<br>
+<p>Do you want close button?(true or false):</p>
+<input></input>
+<br>
+<p>Do you want hide button?(true or false):</p>
+<input></input>
+<br>
+<p>Do you want fullscreen button?(true or false):</p>
+<input></input>
+<br>
+<p>HTML code in window:</p>
+<input></input>
+<br>
+<button id="newWindow">New window</button>
+</div>
+</window>
+
+<!-- Tykan webbrowser -->
+<window id="tykan" draggable="true">
+<statusbar style="height:30px;background:orange;"><!-- You can change style-->
+<style>
+#tykan{
+height:400px;
+width:600px;
+}
+#tykan img:hover{
+border-radius:24px;
+background: #f5f5f6;
+}
+#tykan input{
+font-size:20px;
+}
+</style>
+<img src="icon/arrowLeft.png" height="24"><!-- this is custom button: arrow Left for go to back page-->
+<img src="icon/arrowRight.png" height="24">
+<img src="icon/reload.png" height="24">
+<input id="tykanUrl" style="height:20px;width:70%;padding:0;"></input>
+<close></close><!-- Close button -->
+<fullscreen></fullscreen><!-- Fullscreen button -->
+<hide></hide><!-- Hide button -->
+<!-- PS: hide, fullscreen, close, you can delete there tags, it delete buttons in status bar on window-->
+</statusbar>
+<!-- Status bar end, next - contains html window -->
+
+<script>
+
+</script>
+
+<iframe id="tykanIframe" frameborder="0" width="100%" height="75%" src="data:text/html,<p>Internet error!</p>"></iframe>
+</window>
+
+<file draggable="true" id="file1">
+<img src="https://www.materialui.co/materialIcons/file/folder_black_64x64.png" draggable="false">
+<input value="My folder"></input>
+</file>
+
+<file draggable="true" id="file2">
+<img src="https://www.materialui.co/materialIcons/file/folder_black_64x64.png" draggable="false">
+<input value="My folder"></input>
+</file>
+
+<file draggable="true" id="tykan.js">
+<img src="icon/tykan.png" draggable="false" onclick="alert('hm')">
+<input value="Browser"></input>
+</file>
+
+<file draggable="true" id="blue.js">
+<img src="icon/blue.png" draggable="false" onclick="simakyrBlueCom('.js');">
+<input class="textsimple" value="Blue"></input>
+</file>
+
+<bar>
+<menu onclick="taskbarMenu();"><b class="textsimple" id="lolpOSname">L</b></menu>
+<open class="about textsimple" onclick="hideWin('about');">LolpOS</open>
+<open class="sandbox textsimple" onclick="hideWin('sandbox');">Sandbox</open>
+<task id="time" class="textsimple"></task>
+</bar>
+
+<dropdown id="taskbarMenu" class="hideType">
+
+</dropdown>
+
+<script src="script.js"></script>
+<dropdown class="hideTypeDrop forMouse">
+<li>Open</li>
+<li>Copy</li>
+<li>Paste</li>
+<li>Delete</li>
+<li>Extract</li>
+</dropdown>
+</body>
+<html>
